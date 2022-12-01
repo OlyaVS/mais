@@ -43,15 +43,15 @@ const Library = () => {
         </header>
 
         <div className="library__status">
-          <IconButton onClick={openModal} title="Add New Bookcase">
+          <IconButton onClick={openModal} title="Add new bookcase">
             <AddBookcaseIcon />
           </IconButton>
 
           {library.length && (
             <div className="library__data">
-              <span>In your library: </span>
               <span>
-                {libraryData.count} with {libraryData.books} containing {libraryData.pages}
+                In your library: {libraryData.count} with {libraryData.books} containing{' '}
+                {libraryData.pages}
               </span>
               <span>{libraryData.daysToComplete}</span>
             </div>
@@ -67,7 +67,7 @@ const Library = () => {
         )}
       </div>
 
-      <ModalPortal open={isModalOpen} title="Create New Library Bookcase" onClose={closeModal}>
+      <ModalPortal open={isModalOpen} title="Create new library bookcase" onClose={closeModal}>
         <AddBookcaseDialog onCancel={handleCancel} onSubmit={handleSubmit} />
       </ModalPortal>
     </Fragment>

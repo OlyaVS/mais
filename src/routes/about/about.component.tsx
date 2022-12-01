@@ -16,31 +16,16 @@ const About = () => {
             traveling.
           </p>
           <p>
-            We used to send postcards from all over the world to our loved ones and keep some of
-            them for ourselves as bookmarks, because we are huge fans of local bookstores and
-            reading paper books. But anyway, a big part of our libraries is digital. And yes,
-            sometimes we do forget about books we have, and buy them twice, leave in telegram
-            channels, clouds, readers app, emails.
-          </p>
-          <p>
-            <a
-              className="about__hand"
-              href="mailto:mais_app@aol.com?&body=Hi Five, Mais Team! &subject=Hi Five"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <span>
-                Hi five <HandIcon /> if you can relate!
-              </span>
-            </a>
+            We are used to sending postcards from all over the world to our loved ones and keeping
+            some of them for ourselves as bookmarks, because we are huge fans of local bookstores.
           </p>
           <p className="about__highlight">
-            Mais helps to tidy up and organize all kind of books at one place in bookcases with
+            Mais helps to tidy up and organize paper and e-books at one place in bookcases with
             themed shelves, and plan your reading.
           </p>
           <p>
-            This is a web app MVP in progress for experiments and testing. Any feedback is highly
-            welcomed.
+            This is a web app MVP in progress for experiments and testing. Any feedback is warmly
+            welcomed!
           </p>
           <p>
             <a

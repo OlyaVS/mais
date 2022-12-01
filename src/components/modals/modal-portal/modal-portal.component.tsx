@@ -38,11 +38,11 @@ const ModalPortal = ({ open, title, children, onClose }: ModalPortalProps) => {
     <Fragment>
       <div className="overlay" />
       <div className="modal-portal" ref={ref}>
-        <IconButton onClick={onClose} title="Close Modal">
-          <CloseIcon />
-        </IconButton>
         <header className="modal-portal__header">
           <h2>{title}</h2>
+          <IconButton onClick={onClose} title="Close modal">
+            <CloseIcon />
+          </IconButton>
         </header>
         <div className="modal-portal__content">{children}</div>
       </div>

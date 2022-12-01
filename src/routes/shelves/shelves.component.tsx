@@ -61,7 +61,7 @@ const Shelves = () => {
               onChange={handleChange}
               selectedId={bookcaseId}
             />
-            <IconButton onClick={openModal} title="Add New Shelf">
+            <IconButton onClick={openModal} title="Add new shelf">
               <AddShelfIcon />
             </IconButton>
           </div>
@@ -83,7 +83,7 @@ const Shelves = () => {
         </ul>
       </div>
 
-      <ModalPortal open={isModalOpen} title={`Add Shelf to ${title} Bookcase`} onClose={closeModal}>
+      <ModalPortal open={isModalOpen} title={`Add shelf to ${title} bookcase`} onClose={closeModal}>
         <AddShelfDialog onCancel={handleCancel} onSubmit={handleSubmit} />
       </ModalPortal>
     </Fragment>

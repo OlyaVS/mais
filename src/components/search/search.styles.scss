@@ -7,8 +7,6 @@
     position: relative;
     min-width: 300px;
     max-width: 700px;
-    border-top-left-radius: 16px;
-    border-top-right-radius: 16px;
 
     &--active {
       background-color: $navigation-bg;
@@ -23,8 +21,6 @@
   &__form--active {
     padding: 10px;
     background-color: $navigation-bg;
-    border-top-left-radius: 16px;
-    border-top-right-radius: 16px;
     box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
   }
 
@@ -61,7 +57,7 @@
     font-size: 14px;
     line-height: 20px;
     letter-spacing: 0.1px;
-    color: $orange-peel;
+    color: $button-cancel-font;
     border: none;
     border-radius: 6px;
     background-color: transparent;
@@ -69,7 +65,6 @@
 
     &:hover {
       background-color: $button-cancel-bg-hover;
-      color: $orange-peel;
     }
 
     &:active {

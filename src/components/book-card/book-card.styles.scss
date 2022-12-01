@@ -8,9 +8,8 @@
   width: 300px;
   margin-right: 12px;
   margin-bottom: 12px;
-  border: 2px solid $book-card-border;
   background-color: $white;
-  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  border: 1px solid $black;
 
   @media screen and (max-width: 800px) {
     margin-right: 4px;
@@ -57,7 +56,6 @@
     font-weight: 400;
     font-size: 14px;
     line-height: 16px;
-    letter-spacing: 0.5px;
     overflow: scroll;
     border-bottom: 1px solid $book-card-lines;
   }

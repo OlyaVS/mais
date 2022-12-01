@@ -39,14 +39,14 @@ const BookFooter = ({ pages, pages_read, status, id }: BookFooterProps) => {
           {pages - pages_read} {pagesWording}
         </span>
         {status === 'active' ? (
-          <IconButton onClick={openPageModal} title="Update Current Book Page">
+          <IconButton onClick={openPageModal} title="Update current book page">
             <UpdateIcon />
           </IconButton>
         ) : null}
         {status !== 'active' ? <span className="book-footer__status">{status}</span> : null}
       </div>
 
-      <ModalPortal open={isPageModalOpen} title="Set Current Page Number" onClose={closePageModal}>
+      <ModalPortal open={isPageModalOpen} title="Set current page number" onClose={closePageModal}>
         <SetCurrentPageDialog
           onCancel={closePageModal}
           onSubmit={handlePageUpdate}

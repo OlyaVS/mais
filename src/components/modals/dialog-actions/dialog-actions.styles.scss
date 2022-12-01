@@ -10,12 +10,12 @@
     padding: 8px 16px;
     border: none;
     border-radius: 6px;
-    background-color: $accent-bg-primary;
     font-style: normal;
-    font-weight: 500;
+    font-weight: 600;
     font-size: 14px;
     line-height: 20px;
     letter-spacing: 0.1px;
+    background-color: rgba(242, 241, 233, 0.1);
     color: $button-action-font;
     cursor: pointer;
 
@@ -45,7 +45,6 @@
 
     &:hover {
       background-color: $button-cancel-bg-hover;
-      color: $orange-peel;
     }
 
     &:active {

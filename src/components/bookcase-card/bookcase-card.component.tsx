@@ -54,11 +54,7 @@ const BookcaseCard = ({ bookcase }: BookcaseCardTypes) => {
         <p>{books} books</p>
       </li>
 
-      <ModalPortal
-        open={isEditModalOpen}
-        title="Edit Bookcase Information"
-        onClose={closeBookcaseModal}
-      >
+      <ModalPortal open={isEditModalOpen} title="Edit bookcase" onClose={closeBookcaseModal}>
         <AddBookcaseDialog
           onCancel={closeBookcaseModal}
           onSubmit={handleBookcaseEdit}

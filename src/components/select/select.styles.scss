@@ -6,9 +6,8 @@ select {
   @include small-text;
   padding: 8px;
   margin-right: 8px;
-  background-color: $navigation-bg;
+  background-color: $light;
   border: none;
-  border-radius: 6px;
   cursor: pointer;
 
   &:hover {

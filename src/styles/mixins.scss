@@ -1,3 +1,5 @@
+@import './variables';
+
 @mixin spaced-body-text {
   font-family: 'Roboto', 'Helvetica Neue', sans-serif;
   font-style: normal;
@@ -64,10 +66,6 @@
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
-
-    @media screen and (max-width: 800px) {
-      flex-grow: 1;
-    }
   }
 
 
@@ -77,10 +75,6 @@
     flex-direction: row;
     align-items: center;
     justify-content: flex-start;
-
-    @media screen and (max-width: 800px) {
-      flex-grow: 1;
-    }
 
     h1 {
       margin-right: 8px;
@@ -131,7 +125,7 @@
 
     span {
       padding: 0 12px;
-      border-left: 2px solid $info-border;
+      border-left: 2px solid $vertical-border;
     }
   }
 }
@@ -154,7 +148,7 @@
   flex-direction: column;
   margin-right: 12px;
   margin-bottom: 12px;
-  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  border: 1px solid #000000;
 }
 
 @mixin card-title {

@@ -69,7 +69,7 @@ const ActiveShelf = () => {
         <header className="shelf__header">
           <div className="shelf__title">
             <h1>{title} Shelf</h1>
-            <IconButton onClick={handleFavClick} title="Favourite Shelf">
+            <IconButton onClick={handleFavClick} title="Favourite shelf">
               {isFavourite ? <FavActiveIcon /> : <FavIcon />}
             </IconButton>
           </div>
@@ -84,7 +84,7 @@ const ActiveShelf = () => {
               onChange={handleChange}
               selectedId={shelfId}
             />
-            <IconButton onClick={openModal} title="Edit Shelf">
+            <IconButton onClick={openModal} title="Edit shelf">
               <EditIcon />
             </IconButton>
           </div>
@@ -112,7 +112,7 @@ const ActiveShelf = () => {
           </div>
         )}
 
-        <ModalPortal open={isModalOpen} title="Edit Bookshelf Settings" onClose={closeModal}>
+        <ModalPortal open={isModalOpen} title="Edit bookshelf" onClose={closeModal}>
           <AddShelfDialog
             onCancel={handleCancel}
             onSubmit={handleSubmit}

@@ -7,32 +7,28 @@
   transform: translate(-50%, -50%);
   display: flex;
   flex-direction: column;
-  padding: 4px;
-  background: linear-gradient(239.44deg, #79AEFF 0%, #ABD5F3 48.96%, #CECECA 98.44%);
-  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  background-color: $light-with-opacity;
   z-index: 10;
-
-  .icon-button {
-    align-self: flex-end;
-  }
 
   &__header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 12px 24px;
+    padding: 12px 12px 4px 12px;
     border-bottom: 1px solid $navigation-bg;
 
     h2 {
       flex-grow: 1;
+      font-weight: 400;
       text-align: center;
-      margin: 10px;
+      margin: 0 4px 0 0;
     }
   }
 
   &__content {
     padding: 12px 24px;
+    background-color: $light;
   }
 }
 
@@ -42,6 +38,7 @@
   right: 0;
   bottom: 0;
   left: 0;
-  background-color: rgba(0,0,0, 0.3);
+  background-color: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(4px);
   z-index: 10;
 }

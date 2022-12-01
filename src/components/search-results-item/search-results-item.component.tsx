@@ -37,7 +37,7 @@ const SearchResultsItem = ({ item }: SearchResultsItemProps) => {
           handleAdd(item);
         }}
         disabled={isDisabledAdding}
-        title="Add Book"
+        title="Add book"
         accent={true}
       >
         <AddBookIcon />

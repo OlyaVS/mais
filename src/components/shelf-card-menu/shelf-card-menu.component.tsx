@@ -84,7 +84,7 @@ const ShelfCardMenu = ({
       </IconButton>
 
       <ul className={isOpen ? 'shelf__menu' : 'visually-hidden'} ref={ref}>
-        <MenuItem disabled={false} title="Move to Bookcase">
+        <MenuItem disabled={false} title="Move to bookcase">
           <ul className="shelf__menu shelf__submenu" onClick={handleMove}>
             {userLibrary.map((bookcase) => (
               <MenuItem

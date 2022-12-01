@@ -36,12 +36,12 @@ const Navigation = () => {
   return (
     <Fragment>
       <nav className="navigation">
-        <IconButton onClick={handleOpenBookModal} title="Add Book Manually" accent={true}>
+        <IconButton onClick={handleOpenBookModal} title="Add new book" accent={true}>
           <AddBookIcon />
         </IconButton>
 
         <ul className="navigation__links">
-          <li>
+          <li className="navigation__item">
             <NavLink
               className={({ isActive }) =>
                 isActive ? 'navigation__link navigation__link--active' : 'navigation__link'
@@ -52,7 +52,7 @@ const Navigation = () => {
               <span>Books</span>
             </NavLink>
           </li>
-          <li>
+          <li className="navigation__item">
             <NavLink
               className={({ isActive }) =>
                 isActive ? 'navigation__link navigation__link--active' : 'navigation__link'
@@ -63,7 +63,7 @@ const Navigation = () => {
               <span>Shelves</span>
             </NavLink>
           </li>
-          <li>
+          <li className="navigation__item">
             <NavLink
               className={({ isActive }) =>
                 isActive ? 'navigation__link navigation__link--active' : 'navigation__link'
@@ -74,8 +74,13 @@ const Navigation = () => {
               <span>Library</span>
             </NavLink>
           </li>
-          <li className="navigation__link navigation__about">
-            <NavLink to="/about">
+          <li className="navigation__item">
+            <NavLink
+              className={({ isActive }) =>
+                isActive ? 'navigation__link navigation__link--active' : 'navigation__link'
+              }
+              to="/about"
+            >
               <span>About</span>
             </NavLink>
           </li>
@@ -85,7 +90,7 @@ const Navigation = () => {
 
       <ModalPortal
         open={isEditModalOpen}
-        title="Add New Book to Default Shelf"
+        title="Add new book to default shelf"
         onClose={handleCloseBookModal}
       >
         <AddBookDialogDialog onCancel={handleCloseBookModal} onSubmit={handleBookAdd} />

@@ -53,7 +53,7 @@ const BookHeader = ({ book }: BookHeaderProps) => {
         <BookMenu isMenuOpen={isMenuOpen} bookId={id} status={status} editHandler={openBookModal} />
       </header>
 
-      <ModalPortal open={isEditModalOpen} title="Edit Book Information" onClose={closeBookModal}>
+      <ModalPortal open={isEditModalOpen} title="Edit book" onClose={closeBookModal}>
         <AddBookDialogDialog onCancel={closeBookModal} onSubmit={handleBookEdit} book={book} />
       </ModalPortal>
     </Fragment>

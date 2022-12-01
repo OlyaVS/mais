@@ -87,12 +87,12 @@ const BookMenu = ({ isMenuOpen, bookId, status, editHandler }: BookMenuProps) =>
 
   return (
     <Fragment>
-      <IconButton onClick={openMenu} title="Book Menu">
+      <IconButton onClick={openMenu} title="Book menu">
         <MenuIcon />
       </IconButton>
 
       <ul className={isOpen ? 'book__menu' : 'visually-hidden'} ref={ref}>
-        <MenuItem disabled={false} title="Move to Shelf">
+        <MenuItem disabled={false} title="Move to shelf">
           <ul className="book__menu book__submenu" onClick={handleMove}>
             {userShelves.map((shelf) => (
               <MenuItem

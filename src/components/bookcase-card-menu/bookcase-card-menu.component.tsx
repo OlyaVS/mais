@@ -64,7 +64,7 @@ const BookcaseCardMenu = ({
 
   return (
     <Fragment>
-      <IconButton onClick={openMenu} title="Bookcase Menu">
+      <IconButton onClick={openMenu} title="Bookcase menu">
         <MenuIcon />
       </IconButton>
 

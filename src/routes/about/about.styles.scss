@@ -10,24 +10,17 @@
 
   &__container {
     height: 100%;
-    width: 80%;
+    width: 60%;
   }
 
   p, span {
     font-size: 14px;
   }
 
-  &__hand {
-    display: flex;
-    align-items: center;
-    margin-bottom: 12px;
-    text-transform: initial;
-    font-size: 14px;
-  }
 
   &__highlight {
     padding: 10px;
-    background-color: $navigation-bg;
+    background-color: $light;
   }
 
   &__feedback {
@@ -48,7 +41,7 @@
     display: flex;
     margin: 24px 0;
     text-transform: initial;
-    color: $accent-bg-primary;
+    color: $mariner;
     font-size: 14px;
   }
 

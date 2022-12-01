@@ -66,7 +66,7 @@ const ShelfCard = ({ shelf }: ShelfCardProps) => {
         </header>
         <div className="shelf-card__info">
           <span>{booksCount} books</span>
-          <IconButton onClick={toggleBookShelf} disabled={!booksCount} title="View Books">
+          <IconButton onClick={toggleBookShelf} disabled={!booksCount} title="View books">
             {isShelfOpen ? <CollapseIcon /> : <ExpandIcon />}
           </IconButton>
         </div>
@@ -89,11 +89,7 @@ const ShelfCard = ({ shelf }: ShelfCardProps) => {
         </form>
       </li>
 
-      <ModalPortal
-        open={isEditModalOpen}
-        title="Edit Bookshelf Information"
-        onClose={handleCloseShelfModal}
-      >
+      <ModalPortal open={isEditModalOpen} title="Edit bookshelf" onClose={handleCloseShelfModal}>
         <AddShelfDialog
           onCancel={handleCloseShelfModal}
           onSubmit={handleShelfEdit}

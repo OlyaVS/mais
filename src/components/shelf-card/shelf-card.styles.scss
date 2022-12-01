@@ -5,7 +5,6 @@
   @include card-title;
   @include card-content;
   width: 250px;
-  border: 2px solid $shelf-card-border;
 
   @media screen and (max-width: 800px) {
     margin-right: 4px;
@@ -26,7 +25,7 @@
     position: absolute;
     width: 250px;
     padding: 8px;
-    top: 167px;
+    top: 165px;
     left: -2px;
     background-color: $shelf-card-list;
     box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
@@ -53,6 +52,6 @@
   }
 
   &__book:not(:last-child) {
-    border-bottom: 1px solid $orange-peel;
+    border-bottom: 1px solid $bottom-border;
   }
 }
