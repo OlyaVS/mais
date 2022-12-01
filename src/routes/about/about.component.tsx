@@ -1,5 +1,4 @@
 import { Fragment } from 'react';
-import { ReactComponent as HandIcon } from '../../assets/icons/hand.svg';
 import heart from '../../assets/pictures/heart.png';
 
 import './about.styles.scss';
