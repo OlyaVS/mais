@@ -6,12 +6,10 @@
   flex-direction: column;
   position: relative;
   margin: 10px 0;
-  height: 50px;
 
   input {
     @include body-text;
     padding: 8px;
-    border-radius: 6px;
     height: 50px;
   }
 
