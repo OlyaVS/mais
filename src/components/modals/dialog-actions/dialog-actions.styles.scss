@@ -1,0 +1,55 @@
+@import '../../../styles/variables';
+
+.action-buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  margin-top: 12px;
+
+  &--action {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 6px;
+    background-color: $accent-bg-primary;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.1px;
+    color: $button-action-font;
+    cursor: pointer;
+
+    &:hover {
+      background-color: $accent-bg-hover;
+    }
+
+    &:active {
+      background-color: $accent-bg-active;
+    }
+  }
+
+  &--cancel {
+    padding: 8px 16px;
+    margin-right: 12px;
+    font-family: 'Roboto', 'Helvetica Neue', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.1px;
+    color: $button-cancel-font;
+    border: none;
+    border-radius: 6px;
+    background-color: transparent;
+    cursor: pointer;
+
+    &:hover {
+      background-color: $button-cancel-bg-hover;
+      color: $orange-peel;
+    }
+
+    &:active {
+      background-color: $button-cancel-bg-active;
+    }
+  }
+}

@@ -1,0 +1,15 @@
+@import '../../styles/variables';
+@import '../../styles/mixins.scss';
+
+.library {
+  @include content-container;
+  @include page-header;
+  @include page-status;
+  @include page-data;
+  @include page-cards;
+
+  &__cards {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}

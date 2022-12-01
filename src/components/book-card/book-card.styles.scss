@@ -1,0 +1,73 @@
+@import '../../styles/variables';
+@import '../../styles/mixins.scss';
+
+.book-card {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  width: 300px;
+  margin-right: 12px;
+  margin-bottom: 12px;
+  border: 2px solid $book-card-border;
+  background-color: $white;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+
+  @media screen and (max-width: 800px) {
+    margin-right: 4px;
+  }
+
+  &--active {
+    background-color: $book-bg-active;
+  }
+
+  &__container {
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  &__info {
+    margin: 4px 0;
+    padding-right: 4px;
+  }
+
+  &__image {
+    width: 110px;
+    min-height: 156px;
+    border-top-left-radius: 6px;
+    margin-right: 10px;
+
+    img {
+      min-width: 110px;
+      width: 110px;
+      min-height: 100%;
+      height: 100%;
+      object-fit: fill;
+    }
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__title {
+    max-height: 50px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.5px;
+    overflow: scroll;
+    border-bottom: 1px solid $book-card-lines;
+  }
+
+  &__author {
+    @include small-text;
+    max-height: 55px;
+    padding-top: 8px;
+    overflow: scroll;
+    color: $body-text-color;
+    border-bottom: 1px solid $book-card-lines;
+  }
+}

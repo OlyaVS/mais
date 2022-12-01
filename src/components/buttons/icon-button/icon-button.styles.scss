@@ -1,0 +1,49 @@
+@import '../../../styles/variables';
+
+.icon-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px;
+  background-color: transparent;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $icon-bg-hover;
+  }
+
+  &:active {
+    background-color: $icon-bg-active;
+  }
+
+  &:disabled {
+    opacity: 0.5;
+    cursor: initial;
+  }
+
+  &--accent {
+    border-radius: 0;
+    background-color: $accent-bg-primary;
+    padding: 4px;
+    height: 40px;
+
+    &:hover {
+      background-color: $accent-bg-hover;
+    }
+
+    &:active {
+      background-color: $accent-bg-active;
+    }
+
+    &:disabled {
+      opacity: 0.5;
+    }
+
+    svg {
+      width: 24px;
+      height: 24px;
+    }
+  }
+}

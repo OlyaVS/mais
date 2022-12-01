@@ -1,0 +1,29 @@
+@import '../../../styles/variables';
+@import '../../../styles/mixins.scss';
+
+.text-field {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin: 12px 0;
+
+  input {
+    @include body-text;
+    padding: 8px;
+    border-radius: 6px;
+    height: 50px;
+  }
+
+  label {
+    @include spaced-small-text;
+    position: absolute;
+    top: -8px;
+    left: 10px;
+    background-color: $navigation-bg;
+  }
+
+  &__helper {
+   @include small-text;
+    color:$body-text-color;
+  }
+}

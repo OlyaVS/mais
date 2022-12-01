@@ -1,0 +1,58 @@
+@import '../../styles/variables';
+@import '../../styles/mixins.scss';
+
+.shelf-card {
+  @include card-title;
+  @include card-content;
+  width: 250px;
+  border: 2px solid $shelf-card-border;
+
+  @media screen and (max-width: 800px) {
+    margin-right: 4px;
+  }
+
+  &__info {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 8px;
+    padding-right: 4px;
+
+    span {
+    @include spaced-small-text;
+    }
+  }
+
+  &__books-container {
+    position: absolute;
+    width: 250px;
+    padding: 8px;
+    top: 167px;
+    left: -2px;
+    background-color: $shelf-card-list;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    z-index: 1;
+  }
+
+  &__actions {
+    padding-top: 24px;
+  }
+
+  &__books {
+    max-height: 300px;
+    overflow: scroll;
+  }
+
+  &__book {
+    display: flex;
+    padding-right: 4px;
+    justify-content: space-between;
+
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+  }
+
+  &__book:not(:last-child) {
+    border-bottom: 1px solid $orange-peel;
+  }
+}

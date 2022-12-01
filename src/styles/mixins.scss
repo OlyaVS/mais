@@ -1,0 +1,177 @@
+@mixin spaced-body-text {
+  font-family: 'Roboto', 'Helvetica Neue', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  letter-spacing: 0.1px;
+}
+
+@mixin body-text {
+  font-family: 'Roboto', 'Helvetica Neue', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+}
+
+@mixin spaced-small-text {
+  font-family: 'Roboto', 'Helvetica Neue', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 14px;
+  text-align: left;
+  letter-spacing: 0.5px;
+}
+
+@mixin light-spaced-small-text {
+  font-family: 'Roboto', 'Helvetica Neue', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  text-align: left;
+  letter-spacing: 0.25px;
+}
+
+@mixin small-text {
+  font-family: 'Roboto', 'Helvetica Neue', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 14px;
+}
+
+@mixin content-container {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  padding-left: 6px;
+  padding-right: 24px;
+  height: 100vh;
+  overflow: scroll;
+
+  @media screen and (max-width: 800px) {
+    padding-right: 6px;
+  }
+}
+
+@mixin page-header {
+  &__header {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+
+    @media screen and (max-width: 800px) {
+      flex-grow: 1;
+    }
+  }
+
+
+  &__title {
+    min-width: 250px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+
+    @media screen and (max-width: 800px) {
+      flex-grow: 1;
+    }
+
+    h1 {
+      margin-right: 8px;
+
+      @media screen and (max-width: 800px) {
+        flex-grow: 1;
+      }
+    }
+  }
+}
+
+@mixin page-status {
+  &__status {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 24px 0;
+
+    @media screen and (max-width: 800px) {
+      flex-direction: column;
+      align-items: flex-start;
+      margin: 12px 0;
+    }
+  }
+}
+
+@mixin page-actions {
+  &__actions {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-right: 12px;
+
+    @media screen and (max-width: 800px) {
+      margin: 12px 0;
+    }
+  }
+}
+
+@mixin page-data {
+  &__data {
+    @include spaced-small-text;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    span {
+      padding: 0 12px;
+      border-left: 2px solid $info-border;
+    }
+  }
+}
+
+@mixin page-cards {
+  &__cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    @media screen and (max-width: 800px) {
+      justify-content: center;
+    }
+  }
+}
+
+@mixin card-content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin-right: 12px;
+  margin-bottom: 12px;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+@mixin card-title {
+  &__header {
+    display: flex;
+    flex-wrap: nowrap;
+    padding-right: 8px;
+    margin-bottom: auto;
+
+    h3 {
+      display: flex;
+      flex-grow: 1;
+      flex-wrap: nowrap;
+      padding: 0 8px;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 16px;
+    }
+  }
+}

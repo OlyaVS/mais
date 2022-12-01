@@ -1,0 +1,32 @@
+@import '../../styles/variables';
+
+.menu-item {
+  display: flex;
+  background-color: $navigation-bg;
+  position: relative;
+
+  &__action {
+    flex-grow: 1;
+    border: none;
+    background-color: $navigation-bg;
+    min-height: 40px;
+    cursor: pointer;
+
+    &:hover {
+      background-color: $menu-item-hover;
+    }
+
+    &:active{
+      background-color: $menu-item-active;
+    }
+
+    &:disabled{
+      opacity: 0.5;
+    }
+  }
+
+}
+
+.menu-item:not(:last-child) {
+  border-bottom: 1px solid $orange-peel;
+}

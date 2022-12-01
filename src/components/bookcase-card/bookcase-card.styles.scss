@@ -1,0 +1,19 @@
+@import '../../styles/variables';
+@import '../../styles/mixins.scss';
+
+.bookcase-card {
+  @include card-title;
+  @include card-content;
+  width: 150px;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+
+  @media screen and (max-width: 800px) {
+    margin-right: 4px;
+  }
+
+  p {
+    @include spaced-small-text;
+    margin: 0;
+    padding: 8px;
+  }
+}

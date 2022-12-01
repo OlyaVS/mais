@@ -1,0 +1,27 @@
+@import '../../styles/variables';
+
+.search {
+  &__item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    padding: 4px;
+    border-bottom: 1px solid $info-border;
+  }
+
+  &__item-image {
+    width: 100px;
+
+    img {
+      min-width: 100px;
+      width: 100px;
+      min-height: 100%;
+    }
+  }
+
+  &__item-data {
+    flex-grow: 1;
+    padding: 8px;
+  }
+}

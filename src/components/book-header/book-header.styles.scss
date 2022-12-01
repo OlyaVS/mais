@@ -1,0 +1,17 @@
+@import '../../styles/variables';
+
+.book-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 1px;
+  padding-right: 4px;
+
+  &__completed {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    color: $body-text-color;
+  }
+}

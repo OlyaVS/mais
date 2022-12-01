@@ -1,0 +1,28 @@
+@import '../../styles/variables';
+@import '../../styles/mixins.scss';
+
+.book-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding-right: 4px;
+  margin-bottom: 4px;
+  min-height: 45px;
+
+  &__pages {
+    @include light-spaced-small-text;
+    color: $body-text-color;
+  }
+
+  &__status {
+    @include body-text;
+    padding: 0 4px;
+    text-align: center;
+    text-transform: capitalize;
+    color: $body-text-color;
+  }
+
+  &__status {
+    @include light-spaced-small-text;
+  }
+}

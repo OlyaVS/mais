@@ -1,0 +1,17 @@
+@import '../../styles/variables.scss';
+@import '../../styles/mixins.scss';
+
+
+select {
+  @include small-text;
+  padding: 8px;
+  margin-right: 8px;
+  background-color: $navigation-bg;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $icon-bg-hover;
+  }
+}

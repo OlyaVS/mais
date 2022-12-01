@@ -1,0 +1,30 @@
+@import '../../../styles/variables';
+@import '../../../styles/mixins.scss';
+
+.page-input {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin: 10px 0;
+  height: 50px;
+
+  input {
+    @include body-text;
+    padding: 8px;
+    border-radius: 6px;
+    height: 50px;
+  }
+
+  label {
+    position: absolute;
+    top: -8px;
+    left: 10px;
+    @include spaced-small-text;
+    background-color: $navigation-bg;
+  }
+
+  &__helper {
+    @include spaced-small-text;
+    color: $body-text-color;
+  }
+}
