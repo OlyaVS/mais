@@ -4,6 +4,8 @@ import { Book, BookTypes } from '../../../store/library/libary.types';
 import DialogActions from '../dialog-actions/dialog-actions.components';
 import PageInputField from '../../form-fields/page-input-fied/page-input-field.component';
 import TextInputField from '../../form-fields/text-input-field/text-input-field.component';
+import { ReactComponent as BookIcon } from '../../../assets/icons/book.svg';
+import { ReactComponent as EbookIcon } from '../../../assets/icons/e-book.svg';
 
 import './add-book-dialog.styles.scss';
 
@@ -82,7 +84,10 @@ const AddBookDialogDialog = ({ onCancel, onSubmit, book }: AddBookDialogProps) =
             defaultChecked={type === 'ebook'}
             onClick={handleTypeChange}
           />
-          <label htmlFor="ebook">Ebook</label>
+          <EbookIcon />
+          <label htmlFor="ebook" className="visually-hidden">
+            Ebook
+          </label>
         </div>
 
         <div>
@@ -94,12 +99,15 @@ const AddBookDialogDialog = ({ onCancel, onSubmit, book }: AddBookDialogProps) =
             defaultChecked={type === 'paper'}
             onClick={handleTypeChange}
           />
-          <label htmlFor="paper">Paper Book</label>
+          <BookIcon />
+          <label htmlFor="paper" className="visually-hidden">
+            Paper Book
+          </label>
         </div>
       </div>
 
       <div className="file">
-        <legend className="file__label">Choose picture to upload</legend>
+        <legend className="file__label">Upload book cover</legend>
         <label htmlFor="file" className="visually-hidden">
           Choose picture to upload
         </label>
