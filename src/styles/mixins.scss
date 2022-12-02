@@ -148,7 +148,7 @@
   flex-direction: column;
   margin-right: 12px;
   margin-bottom: 12px;
-  border: 1px solid #000000;
+  border: 1px solid $card-border;
 }
 
 @mixin card-title {

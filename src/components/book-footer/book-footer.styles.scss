@@ -4,9 +4,8 @@
 .book-footer {
   display: flex;
   justify-content: space-between;
-  align-items: flex-end;
-  padding-right: 4px;
-  margin-bottom: 4px;
+  align-items: center;
+  padding-left: 4px;
   min-height: 45px;
 
   &__pages {

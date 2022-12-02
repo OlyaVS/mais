@@ -14,10 +14,6 @@ const BookCard = ({ book }: BookProps) => {
 
   return (
     <div className={`book-card book-card--${status}`}>
-      <div className="book-card__image">
-        <img src={image} alt={title} />
-      </div>
-
       <div className="book-card__container">
         <BookHeader book={book} />
 
@@ -27,6 +23,9 @@ const BookCard = ({ book }: BookProps) => {
         </div>
 
         <BookFooter pages={pages} pages_read={pages_read} status={status} id={id} />
+      </div>
+      <div className="book-card__image">
+        <img src={image} alt={title} />
       </div>
     </div>
   );
