@@ -6,11 +6,37 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 0;
   background-repeat: round;
 
   &__container {
-    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: $container;
+    backdrop-filter: blur(4px);
+    z-index: 10;
+  }
+
+  &__content {
     width: 60%;
+    z-index: 20;
+  }
+
+  &__header {
+    padding: 32px 12px 4px 12px;
+    border-bottom: 2px solid $navigation-bg;
+    background-color: $light-with-opacity;
+    text-align: center;
+
+    h2 {
+      margin: 0;
+    }
+  }
+
+  &__info {
+    padding: 12px 24px;
+    background-color: $light;
   }
 
   p, span {
@@ -20,7 +46,6 @@
 
   &__highlight {
     padding: 10px;
-    background-color: $light;
   }
 
   &__feedback {
