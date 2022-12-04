@@ -14,7 +14,6 @@ import storage from 'redux-persist/lib/storage';
 import librarySlice, { LibraryState } from './library/library.reducer';
 import { Selected } from './selected/selected.types';
 import selectedSlice from './selected/selected.reducers';
-import { DEFAULT_BOOKCASE_ID, DEFAULT_SHELF_ID } from '../constants';
 import createSagaMiddleware from 'redux-saga';
 import { rootSaga } from './root-saga';
 import searchSlice, { SearchState } from './search/search.reducers';
