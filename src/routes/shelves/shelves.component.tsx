@@ -72,7 +72,7 @@ const Shelves = () => {
               {shelvesCount === 1 ? ' shelf ' : ' shelves '}
               with {books}
               {books === 1 ? ' book ' : ' books '}
-              containing {pages} pages.
+              containing {pages} pages
             </span>
             <span>Days to complete: {days_to_complete} </span>
           </div>
