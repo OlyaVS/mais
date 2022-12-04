@@ -107,7 +107,7 @@ const AddBookDialogDialog = ({ onCancel, onSubmit, book }: AddBookDialogProps) =
       </div>
 
       <div className="file">
-        <legend className="file__label">Upload book cover</legend>
+        <legend className="file__label">Upload file</legend>
         <label htmlFor="file" className="visually-hidden">
           Choose picture to upload
         </label>
