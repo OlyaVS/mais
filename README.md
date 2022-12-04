@@ -11,6 +11,6 @@ You may visit Miro Board [https://miro.com/app/board/uXjVPFYeh8Y=/?share_link_id
 
 This project was created with JavaScript, TypeScript, React, Redux, Redux Persist, Redux Saga, Jest.
 
-### Deployment 
+## Deployment 
 
 Open [https://mais-digital-library-app.netlify.app](https://mais-digital-library-app.netlify.app) to view app in your browser.

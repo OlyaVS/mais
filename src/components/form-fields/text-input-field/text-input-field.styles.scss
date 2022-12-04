@@ -23,6 +23,6 @@
 
   &__helper {
    @include small-text;
-    color:$body-text-color;
+    color: $form-helper-text-color;
   }
 }

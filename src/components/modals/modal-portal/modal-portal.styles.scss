@@ -29,6 +29,11 @@
   &__content {
     padding: 12px 24px;
     background-color: $light;
+
+    form {
+      display: flex;
+      flex-direction: column;
+    }
   }
 }
 
