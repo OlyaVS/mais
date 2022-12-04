@@ -13,6 +13,7 @@ import { ReactComponent as BooksIcon } from '../../assets/icons/books.svg';
 import { ReactComponent as AddBookIcon } from '../../assets/icons/add-book.svg';
 import { ReactComponent as ShelvesIcon } from '../../assets/icons/shelves.svg';
 import { ReactComponent as BookcaseIcon } from '../../assets/icons/library.svg';
+import { ReactComponent as UserIcon } from '../../assets/icons/user.svg';
 
 import './navigation.styles.scss';
 
@@ -72,6 +73,17 @@ const Navigation = () => {
             >
               <BookcaseIcon />
               <span>Library</span>
+            </NavLink>
+          </li>
+          <li className="navigation__item">
+            <NavLink
+              className={({ isActive }) =>
+                isActive ? 'navigation__link navigation__link--active' : 'navigation__link'
+              }
+              to="/auth"
+            >
+              <UserIcon />
+              <span>Sign in</span>
             </NavLink>
           </li>
           <li className="navigation__item">

@@ -1,0 +1,106 @@
+@import '../../styles/variables.scss';
+@import '../../styles/mixins.scss';
+
+.auth {
+  @include content-container;
+  flex-direction: row;
+  justify-content: center;
+  padding-right: 0;
+
+  @media screen and (max-width: 800px) {
+    flex-direction: column;
+    align-items: center;
+  }
+
+
+  &__container {
+    width: 50%;
+    padding: 48px;
+
+    @media screen and (max-width: 800px) {
+      padding: 20px;
+      width: 100%;
+    }
+  }
+
+  &__container:nth-child(2) {
+    background: linear-gradient(239.44deg, #FD9809 0%, #DEBCDF 69.79%, #CECECA 100%);
+  }
+
+  header {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    flex-grow: 1;
+    text-align: center;
+    margin-bottom: 48px;
+
+    @media screen and (max-width: 800px) {
+      margin-bottom: 12px;
+    }
+
+    span {
+      @include spaced-body-text;
+    }
+  }
+
+  &__greeting {
+    flex-grow: 1;
+    border-bottom: 1px solid $card-border;
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    padding: 0 56px;
+
+    @media screen and (max-width: 1024px) {
+      padding: 0;
+    }
+  }
+
+  &__actions {
+    display: flex;
+    justify-content: flex-end;
+
+    button {
+      min-width: 120px;
+      height: 40px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 0 12px;
+      border-radius: 6px;
+      color: $body-text-color;
+      border: none;
+      cursor: pointer;
+    }
+
+    button:disabled {
+      cursor: initial;
+      opacity: 50%;
+    }
+  }
+
+  &__sign-in,
+  &__sign-up {
+    background-color:$accent-bg-primary;
+    margin-right: 12px;
+
+    &:hover {
+      background-color: $accent-bg-hover;
+      color: $body-text-color;
+      border: 1px solid $accent-bg-primary;
+    }
+  }
+
+  &__google {
+    background-color: $google-bg;
+    color: white;
+
+    &:hover {
+      background-color: $google-bg-hover;
+      border: none;
+    }
+  }
+}
